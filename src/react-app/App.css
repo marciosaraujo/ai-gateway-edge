@@ -22,6 +22,17 @@
 .brand-mark {
 	color: var(--accent);
 }
+.brand-block {
+	display: flex;
+	flex-direction: column;
+	gap: 0.1rem;
+}
+.brand-byline {
+	color: var(--text-dim);
+	font-size: 0.78rem;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+}
 .site-nav {
 	display: flex;
 	gap: 1.25rem;
@@ -56,6 +67,11 @@
 	border-top: 1px solid var(--border);
 	color: var(--text-dim);
 	font-size: 0.85rem;
+	flex-wrap: wrap;
+}
+.footer-links {
+	display: flex;
+	gap: 1.25rem;
 	flex-wrap: wrap;
 }
 
@@ -129,6 +145,28 @@ a.ghost:hover {
 }
 .stack p {
 	color: var(--text-dim);
+}
+
+.why,
+.easy,
+.stack {
+	margin: 2.5rem 0;
+}
+.why h2,
+.easy h2,
+.stack h2 {
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+.why-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 1rem;
+}
+.easy p {
+	color: var(--text-dim);
+	max-width: 70ch;
+	line-height: 1.7;
 }
 
 /* Playground */

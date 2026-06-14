@@ -18,8 +18,17 @@ function App() {
 				</Routes>
 			</main>
 			<footer className="site-footer">
-				<span>AI Gateway Edge</span>
-				<span>React · Hono · Cloudflare Workers</span>
+				<span>AI Gateway Edge · by Márcio Araújo</span>
+				<span className="footer-links">
+					<a href="mailto:marcio@marcioaraujo.net">marcio@marcioaraujo.net</a>
+					<a
+						href="https://github.com/marciosaraujo"
+						target="_blank"
+						rel="noreferrer"
+					>
+						github.com/marciosaraujo
+					</a>
+				</span>
 			</footer>
 		</BrowserRouter>
 	);
