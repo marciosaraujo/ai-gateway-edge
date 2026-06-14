@@ -13,4 +13,10 @@ app.route("/api/models", models);
 app.route("/api/config", config);
 app.route("/api/chat", chat);
 
+// Non-API routes fall through to the static assets. With
+// not_found_handling: "single-page-application", unknown paths (e.g. deep links
+// like /playground) resolve to index.html so client-side routing works on
+// direct load and refresh.
+app.all("*", (c) => c.env.ASSETS.fetch(c.req.raw));
+
 export default app;
